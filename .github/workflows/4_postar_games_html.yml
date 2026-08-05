@@ -1,0 +1,35 @@
+name: Games Bot - Mini-game of the Day (EN)
+
+on:
+  schedule:
+    - cron: '0 21 * * *'   # 21:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  postar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests groq google-api-python-client google-auth-oauthlib google-auth
+      - run: python games_html.py
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          BLOGGER_ID_GAMES_EN: ${{ secrets.BLOGGER_ID_GAMES_EN }}
+          BLOGGER_CLIENT_ID: ${{ secrets.BLOGGER_CLIENT_ID }}
+          BLOGGER_CLIENT_SECRET: ${{ secrets.BLOGGER_CLIENT_SECRET }}
+          BLOGGER_REFRESH_TOKEN: ${{ secrets.BLOGGER_REFRESH_TOKEN }}
+          POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}  # optional
+          IMGBB_API_KEY: ${{ secrets.IMGBB_API_KEY }}
+      - name: Save history
+        run: |
+          git config user.name "Games Bot"
+          git config user.email "bot@example.com"
+          git add history_games_html_en.txt || true
+          git commit -m "Update history" || echo "Nothing new to commit."
+          git push || (echo "::error::git push failed - history was NOT saved. Check GITHUB_TOKEN permissions (contents: write)." && exit 1)
