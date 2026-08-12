@@ -6,3 +6,4 @@ Angry Birds|aiming to hit the supporting structures
 Dragon Ball Z: Super Butouden 2|holding L+R on controller 2 during the t
 Doom|the code IDDQD activates god mode (invin
 Elden Ring|the boss Margit can be weakened with the
+Pokemon Trading Card Game|keeping a balanced ratio between Pokemon
