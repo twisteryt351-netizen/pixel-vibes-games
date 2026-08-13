@@ -7,3 +7,4 @@
 {"jogo_id": "flappy", "titulo": "Starlight Sprint"}
 {"jogo_id": "dino", "titulo": "Luminari Leap"}
 {"jogo_id": "flappy", "titulo": "Skyblazer"}
+{"jogo_id": "dino", "titulo": "Lumina Rush"}
