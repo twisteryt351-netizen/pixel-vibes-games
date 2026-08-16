@@ -10,3 +10,4 @@
 {"jogo_id": "dino", "titulo": "Lumina Rush"}
 {"jogo_id": "flappy", "titulo": "Starlight Skimmer"}
 {"jogo_id": "snake", "titulo": "Mythic Bloom"}
+{"jogo_id": "dino", "titulo": "Skybound Sprinter"}
