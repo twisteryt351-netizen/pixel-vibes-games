@@ -29,7 +29,7 @@ for nome, valor in [
         raise ValueError(f"Missing required environment variable/secret: {nome}")
 
 groq_client = Groq(api_key=GROQ_API_KEY)
-MODELO_IA = "llama-3.3-70b-versatile"
+MODELO_IA = "openai/gpt-oss-120b"
 
 # --- AI IMAGE GENERATION (Pollinations.ai) ---
 # Optional: if not configured, or if any step fails, the script automatically
