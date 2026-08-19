@@ -12,3 +12,4 @@
 {"jogo_id": "snake", "titulo": "Mythic Bloom"}
 {"jogo_id": "dino", "titulo": "Skybound Sprinter"}
 {"jogo_id": "snake", "titulo": "Lumina Vines"}
+{"jogo_id": "flappy", "titulo": "Nebula Gliders"}
