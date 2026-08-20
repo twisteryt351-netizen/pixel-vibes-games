@@ -13,3 +13,4 @@
 {"jogo_id": "dino", "titulo": "Skybound Sprinter"}
 {"jogo_id": "snake", "titulo": "Lumina Vines"}
 {"jogo_id": "flappy", "titulo": "Nebula Gliders"}
+{"jogo_id": "dino", "titulo": "Solar Sprout Sprint"}
