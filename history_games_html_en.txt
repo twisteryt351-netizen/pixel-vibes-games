@@ -15,3 +15,4 @@
 {"jogo_id": "flappy", "titulo": "Nebula Gliders"}
 {"jogo_id": "dino", "titulo": "Solar Sprout Sprint"}
 {"jogo_id": "snake", "titulo": "Neon Jungle Run"}
+{"jogo_id": "flappy", "titulo": "Starlight Kite"}
